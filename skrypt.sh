@@ -12,4 +12,9 @@ elif [ "$1" == "--logs" ]; then
 		echo "Skrypt: $0" >> $filename
 		echo "Data: $(date)" >> $filename
 	done
+elif [ "$1" == "--help" ]; then
+	echo "Dostępne argumenty:"
+	echo "	--date: Wyświetla obecną datę"
+	echo "	--logs <liczba>: Tworzy wybraną ilośc plików log. Domyślna liczba to 100"
+	echo "	--help: Wyświetla tą wiadomość"
 fi
